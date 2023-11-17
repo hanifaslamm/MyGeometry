@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mygeometry.egg-info/PKG-INFO
+mygeometry.egg-info/SOURCES.txt
+mygeometry.egg-info/dependency_links.txt
+mygeometry.egg-info/top_level.txt
+mygeometry_basic/__init__.py
+mygeometry_basic/geometry.py
