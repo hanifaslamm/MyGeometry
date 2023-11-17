@@ -1,19 +1,27 @@
 from setuptools import setup, find_packages
+from pathlib import Path
 
+VERSION = '0.0.1'
+DESCRIPTION = 'MyGeometry is a simple Python library for calculating the area and perimeter of basic geometric shapes'
+
+this_directory = Path(__file__).parent
+LONG_DESCRIPTION = (this_directory / 'README.md').read_text()
+
+# Setting up
 setup(
-    name='mygeometry',
-    version='0.1.0',
+    name="MyGeometry",
+    version=VERSION,
+    author="hanifaslam",
+    author_email="<aslamhanif141@gmail.com>",
+    description=DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
+    url='https://github.com/hanifaslamm/MyGeometry',
     packages=find_packages(),
+    license='MIT',
     install_requires=[],
-    entry_points={},
-    scripts=[],
+    keywords=['mal', 'myanimelist'],
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Development Status :: 1 - Planning',
     ],
 )
